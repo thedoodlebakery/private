@@ -1,0 +1,1073 @@
+@import url(http://fonts.googleapis.com/css?family=Sintony:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,300,100);
+
+
+body.admin {}
+body.clerk  {}
+body.ecomm {}
+body.ecomm #header { position: relative; z-index: 21; }
+body.guest #login-form .ui-widget-content, #main #call { z-index: 22; }
+#menuSection nav { z-index: 1; }
+#header-logo { left: 0; z-index: 999; }
+body.site br.clear { display: none; }
+body.clerk #login-form .boxContent { background: transparent !important; }
+body.admin br.clear, body.loggedin br.clear { display: block; }
+/* body.loggedin #main #index-slide-nav { display: none; } /**/
+#pageFooter { clear: both; }
+#login-form .buttons { text-indent: 0; }
+#searchContainer { width: 50%; }
+body.loggedin #articleContent, body.support #articleContent { padding: 2em 10px; min-height: 300px; }
+body.ecomm #login-form .boxContent { 
+  color: #FFFFFF;
+	background-color: #0796dc;
+	background: -webkit-gradient(linear, left top, left-bottom, from(#69D2E7) to(#0796dc));
+	background: -webkit-linear-gradient(top, #69D2E7, #0796DC);
+	background: -moz-linear-gradient(top, #69D2E7, #0796dc);
+	background: -ms-linear-gradient(top, #69D2E7, #0796DC);
+	background: -o-linear-gradient(top, #69D2E7, #0796dc);
+	background: linear-gradient(top, #69D2E7, #0796DC);
+	border: 0 none;
+	border-radius: 5px;
+	text-align:center;
+	padding: 10px 5px;
+	margin-left: 125px;
+	font-size: 12px;
+	text-transform: uppercase;
+	width:45%;
+	font-weight: 700;
+	cursor:pointer;
+}
+
+body.ecomm #login-form .boxContent:hover{
+	color:#FFFFFF;
+	background-color: #f8981d;
+	background: -webkit-gradient(linear, left top, left-bottom, from(#f8981d) to(#F38630));
+	background: -webkit-linear-gradient(top, #F8981D, #F38630);
+	background: -moz-linear-gradient(top, #F8981D, #F38630);
+	background: -ms-linear-gradient(top, #f8981d, #f38630);
+	background: -o-linear-gradient(top, #f8981d, #f38630);
+	background: linear-gradient(top, #F8981D, #f38630);
+	border: 0 none;
+}
+
+body.ecomm #login-form .boxContent a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+
+
+/********************
+ * Megasearch enlargement
+ */
+
+ /*
+#searchContainer { height: 56px; padding-top: 20px; }
+#searchContainer #dialCodeBox, #search_string, #search_submit {
+	height: 36px;
+}
+.placeholder {
+	color: #444;
+	font-size: 1.6em;	
+}
+#search_string:-moz-placeholder {
+	color: #444;
+	font-size: 1.6em;
+}
+#searchContainer #dialCodeBox { width: 100px; }
+#searchContainer #search_string { width: 360px; }
+#pageFooter { z-index: 0; }
+body.admin #pageFooter {
+	display: none !important;
+}
+*/
+
+/* Global Styles */
+
+body.ecomm{
+	background-color:#0796dc;
+
+}
+
+/* body.ecomm .wrapper{
+	width:960px;
+	margin-right: 58px;
+	margin-left: 59px;
+} */
+
+
+body.ecomm a{
+	text-decoration: none;
+	color: #5F5F5F;
+}
+
+body.ecomm a:hover{
+	color:#5f5f5f;
+	text-decoration: underline;
+}
+body.ecomm h1{
+	margin-bottom: 5px;
+	color: #F8981D;
+	font-family: 'Sintony', sans-serif;
+}
+/* Navigation Menu*/
+
+body.ecomm #mainNav li{
+	border:0 none;
+	background-color:#f8981d;
+
+}
+
+body.ecomm #menuSection nav{
+	background-color:#f8981d;
+}
+
+body.ecomm #mainNav ul li a:active,
+body.ecomm #mainNav ul li a:hover{
+	background-color:#FA6900;
+}
+
+body.ecomm #mainNav li a:hover{
+	background-color:#FA6900;
+}
+
+body.ecomm #mainNav li.active a{
+	background-color: #FA6900;
+}
+
+body.ecomm .logo img{
+	height:100%;
+	width:20%;
+}
+
+body.ecomm #menuSection{
+	margin-bottom:25px;
+}
+
+/* Body/ Content of Page */
+
+body.ecomm #main #articleContent,
+body.ecomm #page #articleContent{
+	background-color:#FFFFFF;
+	margin-top:15px;
+	padding: 10px 20px 20px;
+	color: #5F5F5F;
+	overflow: hidden;
+}
+
+/* Introduction */
+
+body.ecomm .intro{
+	width: 97%;
+	height: 100%;
+	margin-bottom: 20px;
+}
+
+body.ecomm .intro h1{
+	float: left;
+	padding-top:24px;
+	margin-bottom:5px;
+	font-family: 'Sintony', sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	width: 48%;
+	color: #F8981D;
+
+}
+
+body.ecomm .intro p{
+	float: left;
+	width: 48%;
+	line-height: 20px;
+}
+
+body.ecomm .intro img{
+	border: 0 none;
+	background-color: transparent;
+}
+
+body.ecomm .intro .phones{
+	float: left;
+	width:48%;
+	overflow: hidden;
+
+}
+
+
+/* Widgets */
+
+body.ecomm .widgets {
+	width:100%;
+	height:97%;
+	float: left;
+	margin-top:20px;
+   /* padding-left: 5px; */
+
+}
+
+body.ecomm .widget{
+	float: left;
+	width:290px;
+	height:120px;
+	background-color: #f8981d;
+	padding:10px;
+	margin:10px;
+	color:#FFFFFF;
+
+}
+body.ecomm .widget h2{
+	float:left;
+	width:75%;
+	display:block;
+	font-size: 20px;
+	margin-left: 5px;
+	margin-top: 10px;
+	text-transform: uppercase;
+
+}
+
+body.ecomm .widget p{
+	font-size:115px;
+	float: left;
+	width:20%;
+	display: block;
+	font-weight: lighter;
+	padding-left: 6px;
+	margin-top: -15px;
+}
+
+body.ecomm .widget:hover{
+	background-color: #0796DC;
+}
+
+body.ecomm .widget-two h2,
+body.ecomm .widget-three h2{
+	margin-top:22px;
+}
+
+/* Terms & Conditions */
+
+body.ecomm .terms h1{
+ 	margin-bottom:10px;
+}
+
+body.ecomm .terms h2{
+	color:#69D2E7;
+	font-weight: bold;
+
+}
+
+body.ecomm .terms h5{
+	font-weight: bold;
+	margin-bottom:5px;
+}
+
+/* How It Works */
+
+body.ecomm .unlimited,
+body.ecomm .paygo{
+	width:48%;
+	float: left;
+	/*background: #69D2E7;*/
+	font-size:14px;
+	height:220px;
+	margin-bottom:20px;
+	color:#5F5F5F;
+}
+
+body.ecomm .unlimited h3,
+body.ecomm .paygo h3{
+	background-color:#0796DC;
+	text-transform:uppercase;
+	font-size: 24px;
+	/*margin-right:-10px;*/
+	/*margin-left: -10px;*/
+	padding-bottom: 5px;
+	padding-left: 11px;
+	/*margin-bottom: 20px;*/
+	padding-top: 5px;
+	margin: -9px -10px 20px;
+	color: #FFFFFF;
+}
+
+body.ecomm .unlimited p,
+body.ecomm .paygo p{
+	line-height: 20px;
+}
+
+body.ecomm .unlimited p{
+	/*margin-bottom: 85px;*/
+
+}
+
+body.ecomm .unlimited {
+ 
+   margin-right: 10px;
+   padding:10px;
+   height:100%;
+}
+
+body.ecomm .paygo{
+	
+	padding: 10px;
+	height:100%;
+}
+
+body.ecomm .call-to-action{
+	background:#69D2E7;
+	padding: 10px;
+	font-family: 'Sintony', sans-serif;
+	font-size:14px;
+	text-transform: uppercase;
+	width:30%;
+	color:#FFFFFF;
+	float: right;
+}
+
+body.ecomm .call-to-action:hover{
+	background-color:#F8981D;
+}
+
+/* FAQs */
+
+body.ecomm #articleContent .question{
+	color:#0796DC;
+	font-family: 'Sintony', sans-serif;
+	border-top:1px dotted #5f5f5f;
+	margin-bottom:5px;
+	padding-top: 15px;
+}
+
+body.ecomm .top{
+	margin-bottom:15px;
+}
+body.ecomm .top h1{
+	color: #F8981D;
+}
+body.ecomm .answers a:hover{
+	text-decoration: none;
+}
+
+body.ecomm .top a:hover{
+	text-decoration: underline;
+	cursor:pointer;
+
+}
+
+body.ecomm .answers ul, 
+body.ecomm .answers ol{
+	font-size:14px;
+
+}
+
+body.ecomm .top p{
+	margin-bottom:5px;
+}
+
+body.ecomm .return a, 
+body.ecomm .return{
+	padding-bottom:5px;
+	font-size:14px;
+}
+
+/* Rates */
+
+body.ecomm .pageTitle span{
+	font-family: 'Sintony', sans-serif;
+	color: #F8981D;
+	border-bottom: 1px solid #F8981D;
+
+}
+
+body.ecomm .filter-toolbar #yw0 a{
+	text-decoration: none;
+}
+
+body.ecomm .grid-view thead{
+	background:#69d2e7;
+
+}
+
+body.ecomm .grid-view span{
+	color: #FFFFFF;
+	font-weight: lighter;
+}
+
+body.ecomm .error.even span{
+	color: #000000;
+}
+
+
+body.ecomm .grid-view table.items th a{
+	text-decoration: none;
+}
+
+body.ecomm .filter-toolbar input{
+	padding: 5px;
+	border-radius: 2px;
+	margin-left:5px;
+	border: 1px solid #0796DC;
+	background-color: #0796DC;
+	color:#FFFFFF;	
+}
+
+body.ecomm .filter-toolbar input:hover, 
+body.ecomm .filter-toolbar input:active{
+	background-color:#FFFFFF;
+}
+
+body.ecomm .filter-toolbar #phoneSearch{
+	background-color:#FFFFFF;
+	color: #5F5F5F;
+	padding: 2px;
+}
+
+body.ecomm input#rates_search{
+	background-color: #FFFFFF;
+	color:#5f5f5f;
+}
+
+body.ecomm .grid-view table.items th,
+body.ecomm .grid-view table.items td{
+ 	color:#5F5F5F;
+
+ }
+
+/* Calling Plans */
+
+body.ecomm .services{
+	width:100%;
+	height:100%;
+	display: inline-block;
+	margin-bottom: 25px;
+}
+
+body.ecomm .col-1,
+body.ecomm .col-2{
+	float: left;
+	display: inline;
+	width:48%;
+}
+
+body.ecomm .col-1{
+	margin-right: 5px;
+	/*border-right: 1px dotted #5F5F5F;*/
+	padding-right: 12px;
+}
+
+body.ecomm .col-1 p{
+	line-height:20px;
+}
+
+
+body.ecomm .col-2{
+	padding-left:12px;
+	border-left: 1px dotted #5F5F5F;
+}
+
+body.ecomm .services ul{
+	list-style: none outside none;
+	display: inline-block;
+	margin-top: -10px;
+
+}
+
+body.ecomm .services li{
+	margin-left: 5px;
+	font-size:14px;
+}
+
+body.ecomm .services li:before{
+	content: "\2713        ";
+	/*background-color: #F8981D;*/
+	/*border: 1px solid #5f5f5f;*/
+	font-size: 18px;
+	color: #F8981D;
+}
+
+body.ecomm .plan {
+	text-align: center;
+	background-color:#F8981D;
+	color:#FFFFFF;
+	margin-top:5px;
+	display: block;
+	/*padding: 8px 5px;*/
+	border: 2px solid #FA6900;
+	border-radius: 3px;
+}
+
+body.ecomm .plan p{
+	margin-top:10px;
+	margin-bottom:15px;
+	font-size:16px;
+
+}
+
+
+body.ecomm #unlimitedQuickCheck div.ui-widget-content {
+	color:#FFFFFF;
+	background:none;
+	border: 0 none;
+	float: left;
+}
+
+body.ecomm .plan h3{
+	font-size:20px;
+	font-weight: 700;
+	padding: 8px 0px;
+	background: #FA6900;
+}
+
+
+
+body.ecomm form#unlimitedQuickCheckForm .filter-toolbar{
+	display:none;
+}
+
+body.ecomm #unlimitedQuickCheck span{
+	float:left;
+	font-size: 12px;
+	margin-left: 10px;
+	text-align: left;
+	width:80%;
+}
+
+
+body.ecomm #unlimitedQuickCheck {
+	overflow:hidden;
+}
+
+
+body.ecomm #unlimitedQuickCheck #formFieldContainer, 
+body.ecomm #unlimitedQuickCheck #blurbContainer{
+	float:left;
+	width:50%;
+}
+
+body.ecomm #unlimitedQuickCheck #blurbContainer{
+	line-height:18px;
+	font-size: :14px;
+}
+
+body.ecomm #unlimitedQuickCheck input{
+	border-radius: 0px;
+	padding: 5px;
+	border: 1px solid #0796DC;
+	margin-right:10px;
+	margin-bottom:10px;
+	margin-top: 10px;
+}
+
+
+body.ecomm #unlimitedQuickCheck #term{
+	/*background-color: #0796DC;*/
+	border: 1px solid #0796DC;
+	border-radius: 1px;
+	font-family: 'Open Sans', sans-serif;
+	padding: 3px 0px 2px;
+	font-size:12px;
+	color:#000000;
+	margin-top: 10px;
+}
+
+body.ecomm #unlimitedQuickCheck #product:before{
+	content:" + ";
+	font-size:60px;
+	font-weight:700;
+	margin: 0px 10px;
+
+}
+
+body.ecomm #unlimitedQuickCheck #btncheck{
+	color: #FFFFFF;
+	background-color: #0796dc;
+	background: -webkit-gradient(linear, left top, left-bottom, from(#69D2E7) to(#0796dc));
+	background: -webkit-linear-gradient(top, #69D2E7, #0796DC);
+	background: -moz-linear-gradient(top, #69D2E7, #0796dc);
+	background: -ms-linear-gradient(top, #69D2E7, #0796DC);
+	background: -o-linear-gradient(top, #69D2E7, #0796dc);
+	background: linear-gradient(top, #69D2E7, #0796DC);
+	width:100px;
+	border-radius: 5px;
+}
+
+body.ecomm #unlimitedQuickCheck #btncheck:hover{
+	color:#FFFFFF;
+	background-color: #69D2E7;
+	background: -webkit-gradient(linear, left top, left-bottom, from(#0796dc) to(#69D2E7));
+	background: -webkit-linear-gradient(top, #0796dc, #69D2E7);
+	background: -moz-linear-gradient(top, #0796dc, #69D2E7);
+	background: -ms-linear-gradient(top, #0796dc, #69D2E7);
+	background: -o-linear-gradient(top, #0796dc, #69D2E7);
+	background: linear-gradient(top, #0796dc, #69D2E7);
+	width:100px;
+	border-radius:5px;
+
+}
+
+
+body.ecomm .ui-autocomplete-input {
+	margin-right:5px;
+	padding: 3px;
+	border: 1px solid #0796DC;
+}
+
+
+
+body.ecomm .plan form label{
+	font-size:16px;
+}
+
+
+
+body.ecomm #product option:hover{
+	background-color:#F8981D;
+}
+
+body.ecomm #product select{
+	background: #FFFFFF;
+}
+
+body.ecomm .btn{
+	background: #69D2E7;
+	/*padding: 10px;*/
+	font-family: 'Sintony', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	/*width: 15%;*/
+	color: #FFFFFF;
+	/*float: right;*/
+ 	margin-bottom: 5px;
+
+}
+
+body.ecomm .btn a{
+	color:#FFFFFF;
+}
+
+body.ecomm #SearchRatesContainer{
+	border: 0 none;
+}
+
+/* Support */
+
+body.ecomm .ui-widget-content h4{
+	background-color: #BCBCBC;
+	font-family: 'Sintony', sans-serif;
+}
+
+/* Snippets */
+
+body.ecomm #snippetFilter input, 
+body.ecomm #snippetFilter input:active,
+body.ecomm #snippetFilter input:hover{
+	background-color:#FFFFFF;
+	color:#5f5f5f;
+}
+
+/*  Log In   */
+body.ecomm #login-form .middle-box{
+	box-shadow: 3px 0px 4px 0px #efefef;
+	background-color: #f8981D;
+	color:#FFFFFF;
+	padding:0;	
+}
+
+body.ecomm #login-form .form{
+	color:#5f5f5f;
+	background-color:#ffffff;
+	width: 100%;
+}
+
+body.ecomm #login-form .middle-box,
+body.ecomm #login-form .form{
+	overflow: hidden;
+	padding:0;
+}
+
+body.ecomm #login-form .ui-widget-header{
+	width: 98%;
+	background: none;
+	border-radius: 0px;
+	border: 0 none;
+	font-weight: 400;
+}
+
+body.ecomm #login-form .ui-widget h4{
+	background: none;
+	border-radius: 0px;
+	border: 0 none;
+	font-weight: 700;
+	text-align: center;
+	color:#FFFFFF;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+body.ecomm .form .note{
+	color:#ffffff;
+	text-align: center;
+
+}
+body.ecomm div.form #login-form .row{
+	background: none;
+	
+}
+
+body.ecomm div.form #login-form .buttons{
+	text-align: right;
+	margin-right: 25px;
+}
+
+body.ecomm #login-form .adminForgotPasswordBox{
+	border: 0 none;
+	background: none;
+	background-color: #424242;
+	background: -webkit-gradient(linear, left top, left-bottom, from(#5f5f5f) to(#424242));
+	background: -webkit-linear-gradient(top, #5f5f5f, #424242);
+	background: -moz-linear-gradient(top, #5F5F5F, #424242);
+	background: -ms-linear-gradient(top, #5F5F5F, #424242);
+	background: -o-linear-gradient(top, #5F5F5F, #424242);
+	background: linear-gradient(top, #5F5F5F, #424242);
+	color: #FFFFFF;
+	margin: -3px;
+	padding: 5px 0px 15px;
+
+}
+
+body.ecomm #login-form .adminForgotPasswordBox h4{
+	color: #FFFFFF;
+	text-align: center;
+}
+
+body.ecomm .form #login-form .errorMessage{
+	padding-left: 184px;
+}
+
+body.ecomm .form #login-form input,
+body.ecomm .form  #login-form .error input{
+	/*box-shadow: inset 2px 0 2px 2px #E8E8E8;*/
+	border-radius:2px;
+	height: 28px;
+}
+
+body.ecomm .form #login-form #LoginForm_username,
+body.ecomm .form #login-form #LoginForm_password{
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	/*background-color:#5f5f5f;*/
+	/*color:#ffffff;*/
+}
+
+body.ecomm .form #login-form .form #LoginForm_username input:focus,
+body.ecomm .form #login-form .form #LoginForm_password input:focus{
+	border: 2px solid #0796DC;
+}
+
+body.ecomm .form #login-form .form .error #LoginForm_username,
+body.ecomm .form #login-form .form .error #LoginForm_password{
+	/*color:#ffffff;*/
+	/*margin-left:-10px;*/
+	background:#ffffff url("/writable/fileManager/143/invalid.png") no-repeat 98% center;
+	box-shadow: 0 0 5px #5cd053;
+	
+}
+
+body.ecomm .form #login-form .success #LoginForm_password,
+body.ecomm .form #login-form .success #LoginForm_username{
+ 	background:#ffffff url("/writable/fileManager/143/valid.png") no-repeat 98% center;
+	box-shadow: 0 0 5px #5cd053;
+}
+
+
+
+
+body.ecomm #login-form .ui-button{
+	color: #FFFFFF;
+	background-color: #0796dc;
+	background: -webkit-gradient(linear, left top, left-bottom, from(#69D2E7) to(#0796dc));
+	background: -webkit-linear-gradient(top, #69D2E7, #0796DC);
+	background: -moz-linear-gradient(top, #69D2E7, #0796dc);
+	background: -ms-linear-gradient(top, #69D2E7, #0796DC);
+	background: -o-linear-gradient(top, #69D2E7, #0796dc);
+	background: linear-gradient(top, #69D2E7, #0796DC);
+	border: 0 none;
+	margin-right: 49px;
+
+}
+
+body.ecomm #login-form .ui-button:hover{
+	color:#FFFFFF;
+	background-color: #f8981d;
+	background: -webkit-gradient(linear, left top, left-bottom, from(#f8981d) to(#F38630));
+	background: -webkit-linear-gradient(top, #F8981D, #F38630);
+	background: -moz-linear-gradient(top, #F8981D, #F38630);
+	background: -ms-linear-gradient(top, #f8981d, #f38630);
+	background: -o-linear-gradient(top, #f8981d, #f38630);
+	background: linear-gradient(top, #F8981D, #f38630);
+	border: 0 none;
+	margin-right: 49px;
+}
+
+
+/* Register */
+
+body.ecomm form#EcommRegisterForm{
+	box-shadow: 3px 0px 4px 0px #efefef;
+	background-color: #5f5f5f;
+	color:#FFFFFF;
+	box-shadow: 1px 5px 4px 1px #2F2F2F;
+	border-radius: 5px;
+	border: 5px solid #F8981D;
+	
+}
+
+body.ecomm #EcommRegisterForm .form{
+	color:#5f5f5f;
+	background-color:#ffffff;
+	width: 100%;
+}
+
+
+body.ecomm #EcommRegisterForm .ui-accordion-content{
+	background: #5f5f5f;
+	border:0 none;
+}
+
+body.ecomm form#EcommRegisterForm .required,
+body.ecomm form#EcommRegisterForm .row{
+	color:#FFFFFF;
+
+}
+
+body.ecomm #EcommRegisterForm input:focus{
+	border: 2px solid #0796dc;
+}
+
+body.ecomm #EcommRegisterForm .middle-box,
+body.ecomm #EcommRegisterForm .form{
+	overflow: hidden;
+	padding:0;
+}
+
+body.ecomm #EcommRegisterForm .ui-accordion-header{
+	width: 100%;
+	background: none;
+	border-radius: 0px;
+	border: 0 none;
+}
+
+body.ecomm #EcommRegisterForm .ui-accordion-header a{
+	font-weight: 400;
+	color:#FFFFFF;
+	background:#0796DC;
+}
+
+body.ecomm #EcommRegisterForm .ui-accordion-header a:hover{
+	background:#F8981D;
+	color:#FFFFFF;
+	text-decoration: none;
+}
+
+body.ecomm #EcommRegisterForm .ui-accordion-header a:visited,
+body.ecomm #EcommRegisterForm .ui-accordion-header a:active{
+	background:#5f5f5f;
+	color:#FFFFFF;
+}
+
+body.ecomm #EcommRegisterForm .ui-widget h4{
+	background: none;
+	border-radius: 0px;
+	border: 0 none;
+	font-weight: 700;
+	text-align: center;
+	color:#FFFFFF;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+body.ecomm form#EcommRegisterForm .note{
+	color:#ffffff;
+	text-align: right;
+	margin-right:20px;
+	padding-top:15px;
+
+}
+body.ecomm div.form #EcommRegisterForm .row{
+	background: none;
+	
+}
+
+body.ecomm div.form #EcommRegisterForm .buttons{
+	text-align: right;
+	margin-right: 25px;
+}
+
+body.ecomm form#EcommRegisterForm .errorSummary{
+	border: 0 none;
+	margin: 0;
+	background: #5f5f5f;
+	color:#ffffff;
+}
+
+body.ecomm form#EcommRegisterForm .errorSummary ul li{
+	list-style: outside none;
+	margin-bottom: 5px;
+}
+
+body.ecomm form#EcommRegisterForm .errorSummary ul li:before{
+	content: "\00d7  ";
+	font-size:12px;
+}
+
+
+body.ecomm .form #EcommRegisterForm .errorMessage{
+	padding-left: 361px;
+}
+
+body.ecomm .form #EcommRegisterForm input,
+body.ecomm .form  #EcommRegisterForm .error input{
+	/*box-shadow: inset 2px 0 2px 2px #E8E8E8;*/
+	border-radius:2px;
+	height: 28px;
+	/*background: #fff url("/writable/fileManager/143/invalid.png") no-repeat 98% center;*/
+	/*box-shadow:  1px 1px 1px 3px #454545 inset;*/
+	color: #000000;
+
+}
+
+
+body.ecomm form#EcommRegisterForm .buttons .error input,
+body.ecomm form#EcommRegisterForm #total .error input,
+body.ecomm form#EcommRegisterForm #finalTotal .error input{
+	background-color:#fff;
+}
+
+body.ecomm #EcommRegisterForm #captchaWidget{
+	float:right;
+	margin-right: 135px;
+	margin-top:10px;
+}
+
+body.ecomm #EcommRegisterForm .buttons input:hover{
+	color: #FFFFFF;
+	background-color: #0796dc;
+	background: -webkit-gradient(linear, left top, left-bottom, from(#69D2E7) to(#0796dc));
+	background: -webkit-linear-gradient(top, #69D2E7, #0796DC);
+	background: -moz-linear-gradient(top, #69D2E7, #0796dc);
+	background: -ms-linear-gradient(top, #69D2E7, #0796DC);
+	background: -o-linear-gradient(top, #69D2E7, #0796dc);
+	background: linear-gradient(top, #69D2E7, #0796DC);
+	border: 0 none;
+	margin-right:20px;
+	width:100px;
+	margin-top:10px;
+	margin-bottom: 15px;
+
+}
+
+body.ecomm #EcommRegisterForm .buttons input{
+	color:#FFFFFF;
+	background-color: #f8981d;
+	background: -webkit-gradient(linear, left top, left-bottom, from(#f8981d) to(#F38630));
+	background: -webkit-linear-gradient(top, #F8981D, #F38630);
+	background: -moz-linear-gradient(top, #F8981D, #F38630);
+	background: -ms-linear-gradient(top, #f8981d, #f38630);
+	background: -o-linear-gradient(top, #f8981d, #f38630);
+	background: linear-gradient(top, #F8981D, #f38630);
+	border: 0 none;
+	margin-right:20px;
+	width:100px;
+	margin-top:10px;
+	margin-bottom:15px;
+
+}
+
+
+/*  EPIN Redemption  */
+
+body.ecomm #EpinRedeemForm{
+	background: #5f5f5f;
+	border: 5px solid #F8981D;
+	border-radius: 5px;
+	color:#ffffff;
+	padding:10px 0px;
+	width: 33%;
+	margin: 0 auto;
+}
+
+body.ecomm form#EpinRedeemForm .row, 
+body.ecomm form#EpinRedeemForm .row:nth-child(2n){
+	color:#ffffff;
+	background:none;
+}
+
+body.ecomm #EpinRedeemForm input{
+	margin: 0.2em -5px 0.5em;	
+}
+
+body.ecomm #EpinRedeemForm label, 
+body.ecomm #EpinRedeemForm .required{
+	color:#FFFFFF;
+	width:38%;
+}
+
+body.ecomm #EpinRedeemForm .buttons input{
+	margin-left:156px;
+	color: #FFFFFF;
+	background-color: #0796dc;
+	background: -webkit-gradient(linear, left top, left-bottom, from(#69D2E7) to(#0796dc));
+	background: -webkit-linear-gradient(top, #69D2E7, #0796DC);
+	background: -moz-linear-gradient(top, #69D2E7, #0796dc);
+	background: -ms-linear-gradient(top, #69D2E7, #0796DC);
+	background: -o-linear-gradient(top, #69D2E7, #0796dc);
+	background: linear-gradient(top, #69D2E7, #0796DC);
+	border: 0 none;
+
+}
+
+body.ecomm #EpinRedeemForm .buttons input:hover{
+	background-color: #f8981d;
+	background: -webkit-gradient(linear, left top, left-bottom, from(#f8981d) to(#F38630));
+	background: -webkit-linear-gradient(top, #F8981D, #F38630);
+	background: -moz-linear-gradient(top, #F8981D, #F38630);
+	background: -ms-linear-gradient(top, #f8981d, #f38630);
+	background: -o-linear-gradient(top, #f8981d, #f38630);
+	background: linear-gradient(top, #F8981D, #f38630);
+	border: 0 none;
+}
+
+body.ecomm form#EpinRedeemForm .errorMessage span{
+	font-size:1em;
+	margin-left: 116px;
+}
+
+
+/* Privacy Policy*/
+
+
+/* Footer Menu */
+
+body.ecomm #pageFooter .footer{
+	background-color: #FFFFFF;
+	color:#E8E8E8;
+	padding: 15px 20px;
+}
+
+body.ecomm #pageFooter .footer a{
+	color:#5f5f5f;
+	text-decoration: none;
+	border-right: 1px #5f5f5f dotted;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-decoration: none;
+}
+
+body.ecomm #pageFooter .footer a:hover{
+	text-decoration:underline;
+
+}
+
+body.ecomm #pageFooter .footer a.last{
+	border-right: 0 none;
+}
