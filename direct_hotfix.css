@@ -1,0 +1,64 @@
+body.admin {}
+body.clerk {}
+body.ecomm {}
+body.clerk #header { position: relative; z-index: 21; }
+body.guest #login-form .ui-widget-content, #main #call { z-index: 22; }
+#menuSection nav { z-index: 1; }
+#header-logo { left: 0; z-index: 999; }
+body.site br.clear { display: none; }
+body.clerk #login-form .boxContent { background: transparent !important; }
+body.admin br.clear, body.loggedin br.clear { display: block; }
+body.loggedin #main #index-slide-nav { display: none; }
+#pageFooter { clear: both; }
+#login-form .buttons { text-indent: 0; }
+#searchContainer { width: 50%; }
+body.loggedin #articleContent, body.support #articleContent { padding: 2em 10px; min-height: 300px; }
+body.clerk #login-form .boxContent { text-align: left; }
+/********************
+ * Megasearch enlargement
+ */
+#searchContainer { height: 56px; padding-top: 20px; }
+#searchContainer #dialCodeBox, #search_string, #search_submit {
+  height: 36px;
+}
+.placeholder {
+	color: #444;
+	font-size: 1.6em;	
+}
+#search_string:-moz-placeholder {
+	color: #444;
+	font-size: 1.6em;
+}
+#searchContainer #dialCodeBox { width: 100px; }
+#searchContainer #search_string { width: 360px; }
+#pageFooter { z-index: 0; }
+body.admin #footer {
+	background-color: #a7a7a7;
+	background-image: url('/themes/35/godirecto/footer.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	min-height: 181px;
+	color: #fff;
+	padding-left: 10px;
+}
+body.admin .col3 {
+	width: 300px;
+	margin: 10px;
+	float: left;
+	padding-top: 110px;
+}
+body.admin .alpha { padding-top: 46px; }
+body.admin .omega { float: right; padding-top: 200px; }
+body.admin .alpha table { font-size: 14px; }
+body.storecredit .ui-tabs, body.settings .ui-tabs { clear: both; float: none !important; }
+body.clerk #page { display: inline; }
+body.clerk #articleContent { min-height: 400px; }
+#globalSearchOverlay { z-index: 25; }
+body.clerk #pageFooter { position: relative !important; left: auto !important; margin-left: auto !important; }
+body.clerk #page { display: block !important; }
+body.clerk #main #call{left:326px; top:182px;}
+
+body.clerk .promo img{display:block; margin: 0 auto;}
+body.clerk .promo{
+	background: url("/themes/35/godirecto/background.png") repeat-x scroll 0px 0px #A7A7A7;
+}
